@@ -42,7 +42,7 @@ namespace Rover.Commands
             }
 
             //ignore move if it has reached the boundary
-            if (robot.Boundary.IsInBounds(newX, newY))
+            if (robot.Plateau.IsInBounds(newX, newY))
             {
                 robot.CurrentPosition.X = newX;
                 robot.CurrentPosition.Y = newY;

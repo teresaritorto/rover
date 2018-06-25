@@ -15,8 +15,7 @@ namespace Rover.Test
         {
             _instructionCommandMap = new RobotCommandMapper();
         }
-
-
+        
         private List<RobotCommand> GetCommands(Instruction instruction)
         {
             return _instructionCommandMap.GetCommands(instruction);

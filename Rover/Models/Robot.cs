@@ -8,7 +8,7 @@ namespace Rover.Models
     public class Robot
     {
         public Position CurrentPosition { get; set; }
-        public Bounds Boundary { get; }
+        public Plateau Plateau { get; }
 
         public override string ToString()
         {
@@ -21,7 +21,7 @@ namespace Rover.Models
         public Robot(int x, int y)
         {
             //defaults
-            Boundary = new Bounds(x, y);
+            Plateau = new Plateau(x, y);
             CurrentPosition = new Position(0, 0, Facing.N);
         }
     }

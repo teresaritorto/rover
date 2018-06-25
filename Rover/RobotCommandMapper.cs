@@ -19,6 +19,12 @@ namespace Rover
             MapData(_robotInstructionCommandMap);
         }
 
+        /// <summary>
+        /// For a given instruction with commands, apply the instruction 
+        /// command mappings for each
+        /// </summary>
+        /// <param name="instruction">Instruction</param>
+        /// <returns></returns>
         public List<RobotCommand> GetCommands(Instruction instruction)
         {
             if (instruction == null)
@@ -34,9 +40,9 @@ namespace Rover
             return robotCommands;
         }
         /// <summary>
-        /// Use the instruction to map to the correct robot command
+        /// Use the command type to map to the correct robot command
         /// </summary>
-        /// <param name="instruction"></param>
+        /// <param name="command">Command Type</param>
         public RobotCommand GetCommand(CommandType command)
         {
             //ensure its an instruction we have mapped to a command

@@ -16,17 +16,12 @@ namespace Rover
         /// </summary>
         /// <param name="x"></param>
         /// <param name="y"></param>
-        public RobotController()
-        {
-            Robot = null;
-        }
-
-        public Robot Robot { get; private set; }
-
-        public void InitializeRover(int x, int y)
+        public RobotController(int x, int y)
         {
             Robot = new Robot(x, y);
         }
+
+        public Robot Robot { get; private set; }
 
         public void PlaceRover(int x, int y, Facing direction)
         {

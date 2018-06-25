@@ -11,8 +11,7 @@ namespace Rover.Test
         [TestInitialize]
         public void Setup()
         {
-            _robotController = new RobotController();
-            _robotController.InitializeRover(5, 5);
+            _robotController = new RobotController(5, 5);
         }
 
         [TestMethod]

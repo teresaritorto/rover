@@ -6,12 +6,12 @@ namespace Rover.Test.Models
     [TestClass]
     public class BoundsTest
     {
-        private Bounds _boundary;
+        private Plateau _boundary;
 
         [TestInitialize]
         public void Setup()
         {
-            _boundary = new Bounds(5, 5);
+            _boundary = new Plateau(5, 5);
         }
 
         [TestMethod]

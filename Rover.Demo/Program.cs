@@ -14,13 +14,13 @@ namespace Rover.Demo
         {
             try
             {
-                var robotController = new RobotController();
+                
                 var output = new List<string>();
 
                 Console.WriteLine("Input:");
 
                 Console.WriteLine("5 5");
-                robotController.InitializeRover(5, 5);
+                var robotController = new RobotController(5, 5);
 
                 Console.WriteLine("1 2 N");
                 robotController.PlaceRover(1, 2, Enums.Facing.N);
