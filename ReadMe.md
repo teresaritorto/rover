@@ -26,7 +26,7 @@ You can run the Rover Console application by double clicking on the exe file nam
 - For simplicity the Demo application issues commands directly to the core Rover solution - therefore user validation and instruction parsing logic was kept to a minimum as there is no direct user entry.
 
 ## THE PROBLEM
------------
+
 A squad of robotic rovers are to be landed by NASA on a plateau on Mars. This plateau,
 which is curiously rectangular, must be navigated by the rovers so that their on-board
 cameras can get a complete view of the surrounding terrain to send back to Earth.
